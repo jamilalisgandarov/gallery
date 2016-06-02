@@ -21,6 +21,32 @@ body {
     width: 100%;
 }
 
+.bigPicUp {
+    margin: 0 auto;
+    width: 500px;
+    overflow: hidden;
+    height: 400px;
+    z-index: 999;
+    position: relative;
+    align-self: center;
+}
+
+.bigPicUp button {
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+.button {
+    width: 10px;
+    height: 10px;
+    border: 2px solid black;
+}
+
 .overlay {
     top: 0;
     height: 100%;
@@ -28,6 +54,7 @@ body {
     background-color: black;
     opacity: 0.5;
     position: absolute;
-    z-index: 999;
+    z-index: 99;
+    justify-content: center;
     display: none;
 }

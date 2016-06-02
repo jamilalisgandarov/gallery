@@ -6,9 +6,15 @@ jQuery(document).ready(function($) {
             .children().addClass('pics')
     }
     $(".pics").click(function() {
-        $(".overlay").css('display', 'block');
-        var source = $(this).children().eq(0).attr("src");
-        $(".overlay").append("<img src=" + source + ">")
+        $(".main")
+            .append("<div class='bigImg'><img src=" + $(this).children().eq(0).attr("src") + "></div>")
+            .append("<div class='button' onclick='bla()'>X</div>");
     });
+
+    function bla() {
+        alert("salam mans")
+    }
+
+
 
 });
